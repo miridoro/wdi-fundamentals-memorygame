@@ -1,25 +1,24 @@
 // setting up variables
-var cardOne = "queen";
-var cardTwo = "queen";
-var cardThree = "king";
-var cardFour = "king";
+var one = "queen";
+var two = "queen";
+var three = "king";
+var four = "king";
 
 // setting up conditions
 
-/*
-if(cardOne == cardTwo || cardThree == cardFour){
-	console.log("True");
-}
-else if (cardOne == cardThree || cardOne == cardFour){
-	alert ("false");
-	return false;
+
+
+
+if (two !== four || two !== three){
+	alert ("Sorry, try again.");}
+else if (one !== four || one !== three){
+	alert("Sorry, try again.");
 }
 else {
-	alert ("false");
-	return false;
+	alert ("You have a match.");
 }
-*/
 
-console.log(cardOne == cardTwo || cardThree == cardFour);
-console.log(cardOne == cardThree || cardOne == cardFour);
-console.log(cardTwo == cardThree || cardTwo == cardFour);
+
+// console.log(cardOne == cardTwo || cardThree == cardFour);
+// console.log(cardOne == cardThree || cardOne == cardFour);
+// console.log(cardTwo == cardThree || cardTwo == cardFour);
