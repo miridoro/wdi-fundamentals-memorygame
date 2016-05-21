@@ -2,13 +2,10 @@
 
 var cards = ["queen", "queen", "king", "king"];
 var cardsInPlay = [];
-
-
+var count = 0;
 
 
 var createBoard = function () {
-
-	
 
 	var oldDiv = document.getElementById('gameboard');
 
@@ -38,12 +35,13 @@ var isMatch = function(cardsInPlay) {
 	console.log("isMatch");
 	if(cardsInPlay[0].getAttribute('data-card') === cardsInPlay[1].getAttribute('data-card')){
 		alert("It's a match!");
+		count= count + 1;
 
 	}
 	else{
 		alert("Sorry, it's not a match");
 	}
-
+	console.log("Score= " + count);
 
 };
 
@@ -91,6 +89,16 @@ function shuffleArray(array) {
     }
     return array;
 }
+
+
+var pressButton = document.getElementById('myButton');
+pressButton.addEventListener('click', myButton);
+
+function myButton() {
+    alert("Your total score is: " + count);
+    location.reload();
+}
+
 
 shuffleArray(cards);
 console.log(cards);
