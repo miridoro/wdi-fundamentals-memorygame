@@ -1,8 +1,4 @@
-
-
-
-
-	.card  {
+.card  {
 		height: 200px;
 		width: 150px;
 		border: 1px solid black;
@@ -10,10 +6,10 @@
 		border-radius: 10px;
 		display: inline-block;
 		float: left;
-		margin: 8%;
+		margin: 2%;
 	}
 
-	img {
+img {
 		height: 200px;
 		width: 150px;
 		border-radius: 10px;
@@ -22,38 +18,38 @@
 		margin: 8%;
 	}
 
-	h1 {color: 	rgb(0,128,128);}
-	h2 {color: #ffd700;}
+h1 {color: 	rgb(0,128,128);}
+h2 {color: #ffd700;}
 
-	#subheading {
+#subheading {
 		color:orange;
 		font-family: cursive;
 	}
-	.name {
-		color: #ff0000;
+.name {
+		color: pink;
 	}
-	h1, h2, p {
+h1, h2, p {
 		text-align: center;
 		width: 50%;
 	}
 
-	footer {
+footer {
 		text-align: center;
 	}
 
 
 .board {
 	height: 50%;
-	width: 50%;
+	width:50%;
 	display: block;
 
 	}
 
-	nav {
+nav {
 		background-color: #808080;
 	}
 
-	nav a {
+nav a {
 background-color: #ffbf00;
 color: white;
 padding: 35px;
@@ -62,11 +58,13 @@ float: left;
 text-decoration: none;
 	}
 
-	a:hover {
+a:hover {
 		background-color: #ee5f3c;
 	}
 
-	.clearfix:after {
+	/* force element to self-clear its children */
+
+.clearfix:after {
         visibility: hidden;
         display: block;
         content: " ";
@@ -75,12 +73,15 @@ text-decoration: none;
         font-size: 0;
       }
 
-      footer {
+footer {
       	background-color: #808080;
       	clear: both;
+      	height: 20px;
+      	padding: 10px;
+      	border-radius: 5px;
       }
 
-      button {
+button {
 	    background-color: #4CAF50;
 	    border: none;
 	    color: white;
